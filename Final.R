@@ -50,7 +50,9 @@ str(states_data)
 
 states_data %>%
   group_by(Region) %>%
-  summarize(mean_age_adjusted_rate = mean(`Age adjusted Rate`))
+  summarize(mean_age_adjusted_rate = mean(`Age adjusted Rate`),
+            sd_age_adjusted_rate = sd(`Age adjusted Rate`),
+            coefficient_of_variation = sd_age_adjusted_rate/mean_age_adjusted_rate)
 
 
 

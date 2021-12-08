@@ -29,24 +29,30 @@ states_data <- states_data %>%
   filter(State != "District of Columbia") 
 view(states_data)
 
-states_data <- states_data %>%
-  mutate(South = South)
 
 states_data <- states_data %>%
   select(-c(State))
 view(states_data)
 states_data <- states_data %>%
   select(-c(Code, Abbrev))
-
-
 states_data <- states_data %>%
   select(-c('Range Category', 'Number of Deaths'))
   
 view(states_data)
 
 
+
+as.numeric(states_data$`Age adjusted Rate`)
+states_data$Region <- as.factor(states_data$Region)
+
+str(states_data)
+
+
 states_data %>%
   group_by(Region) %>%
-  summarize(x = mean('Age adjusted Rate'))
-  
+  summarize(mean_age_adjusted_rate = mean(`Age adjusted Rate`))
+
+
+
+
 

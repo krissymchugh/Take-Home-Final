@@ -21,5 +21,5 @@ opioid deaths does not accurate the entire region of the South well. In contrast
 variability around the mean opioid deaths.
 D. My favorite topic from this course was when we learned about how to link R and Python programs with Github.
 I thought this was very intersting because it shows how easily programmers can share and collaborate with their
-work all in one place. I never knew that was possible and thought that coding was just restricted to the platforms we code on. I also really like how you can commit changes on Github so you can look back and see the process and changes throughout writing a program. 
+work all in one place. I never knew that was possible and thought that coding was just restricted to the platforms we code on. I also really like how you can commit changes on Github so you can look back and see the process and changes throughout writing a program.
 

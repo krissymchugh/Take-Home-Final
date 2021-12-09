@@ -41,11 +41,8 @@ states_data <- states_data %>%
 view(states_data)
 
 
-
 as.numeric(states_data$`Age adjusted Rate`)
 states_data$Region <- as.factor(states_data$Region)
-
-str(states_data)
 
 
 states_data %>%
@@ -53,6 +50,7 @@ states_data %>%
   summarize(mean_age_adjusted_rate = mean(`Age adjusted Rate`),
             sd_age_adjusted_rate = sd(`Age adjusted Rate`),
             coefficient_of_variation = sd_age_adjusted_rate/mean_age_adjusted_rate)
+
 
 
 
